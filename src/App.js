@@ -31,7 +31,7 @@ const App = () => {
     return(
         <div className="chinchilla-container">
             {/* Return lots of items */}
-            {
+            { // when you map over a component, add a unique KEY to the component
                 startingChinchillas.map( (chinchilla, index) => {
                     return(
                         <Item 
