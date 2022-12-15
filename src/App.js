@@ -23,9 +23,11 @@ const App = () => {
         },
     ];
 
+
+
     // JSX goes in our return!!
     return(
-        <div>
+        <div className="chinchilla-container">
             {/* Return lots of items */}
             {
                 startingChinchillas.map( (chinchilla) => {
