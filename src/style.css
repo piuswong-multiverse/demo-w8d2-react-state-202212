@@ -19,3 +19,9 @@ img {
     padding: 1em;
     text-align: center;
 }
+
+.message {
+    color: red;
+    font-size: 2em;
+    background: black;
+}

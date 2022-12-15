@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Item from './Item';
 import './style.css';
 
@@ -23,16 +23,21 @@ const App = () => {
         },
     ];
 
-
+    // Let's track the state of our app!!!
+    // [ state, setter ] = useState(defaultValue);
+    [ favoriteId, setFavoriteId ] = useState(0);
 
     // JSX goes in our return!!
     return(
         <div className="chinchilla-container">
             {/* Return lots of items */}
             {
-                startingChinchillas.map( (chinchilla) => {
+                startingChinchillas.map( (chinchilla, index) => {
                     return(
-                        <Item chinchObj={ chinchilla } />
+                        <Item 
+                            chinchObj={ chinchilla } 
+                            favoriteId={ favoriteId } 
+                            currentId={ index }  />
                     )
                 })
             }
