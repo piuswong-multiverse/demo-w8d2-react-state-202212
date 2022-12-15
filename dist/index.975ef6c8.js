@@ -2918,7 +2918,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App":"2kQhy"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2kQhy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("309b8765673168f0");
 
@@ -27103,7 +27103,119 @@ module.exports = require("9d4ab3142ba84477");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"2kQhy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f00f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _item = require("./Item");
+var _itemDefault = parcelHelpers.interopDefault(_item);
+var _styleCss = require("./style.css");
+const App = ()=>{
+    const startingChinchillas = [
+        {
+            name: "snowy",
+            imgURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbU4sq8yjjTqhlSAb6y9T2-zBCOeCnb9ij-P5LarYp0XZOwhoIk4FIPZmIUSNToVVkKU&usqp=CAU"
+        },
+        {
+            name: "marv",
+            imgURL: "https://i.pinimg.com/originals/2d/60/df/2d60df43e06b1735adbe5c234f69cde3.jpg"
+        },
+        {
+            name: "mort",
+            imgURL: "https://static.wixstatic.com/media/e84d8b_d72cb55e00a749288e6be75b3a2fadbe~mv2.jpg/v1/crop/x_99,y_4,w_780,h_607/fill/w_560,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e84d8b_d72cb55e00a749288e6be75b3a2fadbe~mv2.jpg"
+        },
+        {
+            name: "charlie",
+            imgURL: "https://stkittsvet.co.uk/wp-content/uploads/2019/06/images-chincilla.jpg" //'./images/img1.jpeg'
+        }
+    ];
+    // JSX goes in our return!!
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: startingChinchillas.map((chinchilla)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemDefault.default), {
+                chinchObj: chinchilla
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 33,
+                columnNumber: 25
+            }, undefined);
+        })
+    }, void 0, false, {
+        fileName: "src/App.js",
+        lineNumber: 28,
+        columnNumber: 9
+    }, undefined);
+};
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$f00f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Item":"58edv","./style.css":"bhJkM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"58edv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$06fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$06fe.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Item = (props)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "item",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Hello! My name is ",
+                    props.chinchObj.name,
+                    "!"
+                ]
+            }, void 0, true, {
+                fileName: "src/Item.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: props.chinchObj.imgURL
+            }, void 0, false, {
+                fileName: "src/Item.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Item.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Item;
+exports.default = Item;
+var _c;
+$RefreshReg$(_c, "Item");
+
+  $parcel$ReactRefreshHelpers$06fe.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27267,116 +27379,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"b8584894d7548616":"786KC"}],"2kQhy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f00f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _item = require("./Item");
-var _itemDefault = parcelHelpers.interopDefault(_item);
-const App = ()=>{
-    const startingChinchillas = [
-        {
-            name: "snowy",
-            imgURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbU4sq8yjjTqhlSAb6y9T2-zBCOeCnb9ij-P5LarYp0XZOwhoIk4FIPZmIUSNToVVkKU&usqp=CAU"
-        },
-        {
-            name: "marv",
-            imgURL: "https://i.pinimg.com/originals/2d/60/df/2d60df43e06b1735adbe5c234f69cde3.jpg"
-        },
-        {
-            name: "mort",
-            imgURL: "https://static.wixstatic.com/media/e84d8b_d72cb55e00a749288e6be75b3a2fadbe~mv2.jpg/v1/crop/x_99,y_4,w_780,h_607/fill/w_560,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e84d8b_d72cb55e00a749288e6be75b3a2fadbe~mv2.jpg"
-        },
-        {
-            name: "charlie",
-            imgURL: "https://stkittsvet.co.uk/wp-content/uploads/2019/06/images-chincilla.jpg" //'./images/img1.jpeg'
-        }
-    ];
-    // JSX goes in our return!!
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: startingChinchillas.map((chinchilla)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemDefault.default), {
-                chinchObj: chinchilla
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 32,
-                columnNumber: 25
-            }, undefined);
-        })
-    }, void 0, false, {
-        fileName: "src/App.js",
-        lineNumber: 27,
-        columnNumber: 9
-    }, undefined);
-};
-_c = App;
-exports.default = App;
-var _c;
-$RefreshReg$(_c, "App");
-
-  $parcel$ReactRefreshHelpers$f00f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Item":"58edv"}],"58edv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$06fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$06fe.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Item = (props)=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: [
-                    "Hello! My name is ",
-                    props.chinchObj.name,
-                    "!"
-                ]
-            }, void 0, true, {
-                fileName: "src/Item.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: props.chinchObj.imgURL
-            }, void 0, false, {
-                fileName: "src/Item.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Item.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Item;
-exports.default = Item;
-var _c;
-$RefreshReg$(_c, "Item");
-
-  $parcel$ReactRefreshHelpers$06fe.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire3cd0")
+},{"b8584894d7548616":"786KC"}],"bhJkM":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire3cd0")
 
 //# sourceMappingURL=index.975ef6c8.js.map
