@@ -27279,6 +27279,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _item = require("./Item");
+var _itemDefault = parcelHelpers.interopDefault(_item);
 const App = ()=>{
     const startingChinchillas = [
         {
@@ -27298,17 +27300,20 @@ const App = ()=>{
             imgURL: "https://stkittsvet.co.uk/wp-content/uploads/2019/06/images-chincilla.jpg" //'./images/img1.jpeg'
         }
     ];
+    // JSX goes in our return!!
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            src: startingChinchillas[0].imgURL
-        }, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 26,
-            columnNumber: 13
-        }, undefined)
+        children: startingChinchillas.map((chinchilla)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemDefault.default), {
+                chinchObj: chinchilla
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 32,
+                columnNumber: 25
+            }, undefined);
+        })
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 25,
+        lineNumber: 27,
         columnNumber: 9
     }, undefined);
 };
@@ -27318,6 +27323,56 @@ var _c;
 $RefreshReg$(_c, "App");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Item":"58edv"}],"58edv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$06fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$06fe.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Item = (props)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Hello! My name is ",
+                    props.chinchObj.name,
+                    "!"
+                ]
+            }, void 0, true, {
+                fileName: "src/Item.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: props.chinchObj.imgURL
+            }, void 0, false, {
+                fileName: "src/Item.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Item.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Item;
+exports.default = Item;
+var _c;
+$RefreshReg$(_c, "Item");
+
+  $parcel$ReactRefreshHelpers$06fe.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Item from './Item';
 
 const App = () => {
 
@@ -21,9 +22,19 @@ const App = () => {
         },
     ];
 
+    // JSX goes in our return!!
     return(
         <div>
-            <img src={startingChinchillas[0].imgURL} />
+            {/* Return lots of items */}
+            {
+                startingChinchillas.map( (chinchilla) => {
+                    return(
+                        <Item chinchObj={ chinchilla } />
+                    )
+                })
+            }
+            {/* If you just want to show one Item... */}
+            {/* <Item chinchObj={ startingChinchillas[0] } /> */}
         </div>
     )
 }
