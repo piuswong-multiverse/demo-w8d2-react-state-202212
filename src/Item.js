@@ -11,6 +11,7 @@ const Item = ( props ) => {
                 // if the favorite id === the current chinchilla id, display this...
                 props.favoriteId === props.currentId ? <h2 className="message"> This is my favorite </h2> : ""
             }
+            <p><a href="#">Click me</a></p>
         </div>
     )
 }

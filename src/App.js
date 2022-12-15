@@ -35,6 +35,7 @@ const App = () => {
                 startingChinchillas.map( (chinchilla, index) => {
                     return(
                         <Item 
+                            key={ index }
                             chinchObj={ chinchilla } 
                             favoriteId={ favoriteId } 
                             currentId={ index }  
