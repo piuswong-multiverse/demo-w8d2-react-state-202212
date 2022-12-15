@@ -37,7 +37,8 @@ const App = () => {
                         <Item 
                             chinchObj={ chinchilla } 
                             favoriteId={ favoriteId } 
-                            currentId={ index }  />
+                            currentId={ index }  
+                            setFavoriteId={ setFavoriteId } />
                     )
                 })
             }

@@ -2,7 +2,9 @@ import React from 'react';
 
 const Item = ( props ) => {
     return(
-        <div className="item">
+        <div className="item" onClick={ () => {
+            props.setFavoriteId(props.currentId);
+        } } >
             <h1>Hello! My name is { props.chinchObj.name }!</h1>
             <img src={ props.chinchObj.imgURL } />
             {
